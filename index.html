@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+  <header>
+    <h1>Simple, traffic-based pricing</h1>
+    <span>Sign-up for our 30-day trial.</span> 
+      <span>No credit card required.</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="146" height="145"><g fill="none" fill-rule="evenodd" stroke="#CFD8EF"><circle cx="63" cy="82" r="62.5"/><circle cx="105" cy="41" r="40.5"/></g></svg>
+  </header> 
+<div class="card-container">
+  <div class="slider-container">
+    <h2><span id="pageviews">100k</span> Pageviews</h2>
+    <div class="slider-btn-container">
+      <input type="range" min="0" max="500000" step="1000" class="price-slider" id="price-slider">
+
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="22" height="13" ><g fill="#80FFF3" fill-rule="evenodd"><path d="M16 2.558v7.884a1 1 0 001.735.679l3.639-3.943a1 1 0 000-1.356l-3.64-3.943A1 1 0 0016 2.558zM6 2.558v7.884a1 1 0 01-1.735.679L.626 7.178a1 1 0 010-1.356l3.64-3.943A1 1 0 016 2.558z"/></g></svg> -->
+
+    </div>
+   <p class="price"><span id="updated-price"></span>/month</p>
+  </div>
+
+  <div class="billing-container">
+    <span>Monthly Billing</span>
+    <label class="switch">
+      <input type="checkbox" id="checkbox">
+      <span class="slider round"></span>
+    </label>
+    <span class="yearly-billing">Yearly Billing
+       <span class="discount-number">-25%</span>
+    </span>
+  </div>
+
+  <div class="features-container">
+    <div class="features">
+      <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>
+      <span>Unlimited websites<span>
+    </div>
+    <div class="features">
+      <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>
+      <span>100% data ownership</span>
+    </div>
+    <div class="features">
+      <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>
+      <span>Email reports</span>
+    </div>
+    <button class="trial-btn">Start my trial</button>
+  </div>
+
+  
+
+</div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

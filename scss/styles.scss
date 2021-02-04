@@ -1,0 +1,179 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+@import 'toggle';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  color: hsl(225, 20%, 60%);
+  background-color: hsl(230, 100%, 99%);
+}
+
+/***** Header *****/
+
+header {
+  text-align: center;
+  margin-bottom: 2em;
+  padding: 2em;
+  position: relative;
+  z-index: 1;
+
+  h1 {
+    padding: 1em 1em .25em 1em;
+    color: black;
+    font-size: 1.85em;
+  }
+
+  span {
+    display: block;
+    padding: .5em;
+    font-size: 15px;
+  }
+
+  svg {
+    position: absolute;
+    top: 50px;
+    right: 200px;
+    z-index: -1;
+  }
+}
+
+/***** Card *****/
+
+.card-container {
+  // display: flex;
+  // flex-flow: column wrap;
+  // align-items: center;
+  // justify-content: center;
+  margin: 2em;
+  padding: 2em;
+  height: 65vh;
+  background-color: white;
+
+  .slider-container {
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 3em;
+
+    h2 {
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 1em;
+    }
+
+    .price {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        color: black;
+        font-size: 2.75em;
+      }
+    }
+
+    
+  
+    .slider-btn-container {
+      
+      width: 100%;
+      padding: 2em;
+      position: relative;
+  
+      .price-slider {
+        width: 100%;
+        -webkit-appearance: none;
+        appearance: none;
+        height: 15px;
+        background-color: hsl(224, 65%, 95%);
+        outline: none;
+        opacity: 0.7;
+        -webkit-transtition: .2s;
+        transition: opacity .2s;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    
+      .slider-button {
+        border: 5px solid hsl(174, 86%, 45%);
+        border-radius: 50%;
+        background-color: hsl(174, 86%, 45%);
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 10px;
+        
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    } 
+  }
+
+  .billing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid hsl(230, 100%, 99%);
+    padding-bottom: 3em;
+
+    span {
+      padding-right: 1em;
+    }
+
+    .yearly-billing {
+      padding-left: 1em;
+      
+      .discount-number {
+        background-color: hsl(14, 92%, 95%);
+        color: hsl(15, 100%, 70%);
+        border-radius: 25%;
+        text-align: center;
+        padding-left: 1em;
+      }
+    }
+  }
+
+  .features-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1em;
+
+    .features {
+      padding: .5em;
+
+      span {
+        padding: .5em;
+      }
+    } 
+  }
+
+  .trial-btn {
+    background-color: hsl(227, 35%, 25%);
+    color: white;
+    border-radius: 33%;
+    width: 150px;
+    height: 50px;
+    margin-top: 2em;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+
+
+
